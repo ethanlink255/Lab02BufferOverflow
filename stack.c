@@ -1,6 +1,5 @@
 /* Vunlerable program: stack.c */
 /* You can get this program from the lab's website */
-
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
@@ -10,7 +9,7 @@
  * won't be able to use the solutions from the past.
  * Suggested value: between 0 and 400  */
 #ifndef BUF_SIZE
-#define BUF_SIZE 24
+#define BUF_SIZE 120
 #endif
 
 int bof(char *str)
@@ -18,7 +17,7 @@ int bof(char *str)
     char buffer[BUF_SIZE];
 
     /* The following statement has a buffer overflow problem */
-    strcpy(buffer, str);       
+    strcpy(buffer, str);
 
     return 1;
 }
